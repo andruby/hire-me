@@ -1,3 +1,40 @@
 body {
-  color: red;
+  font-family: sans-serif;
+}
+
+$left-container-width: 160px;
+$center-container-width: 340px;
+$right-container-width: 450px;
+$container-padding: 10px;
+
+
+.wrapper {
+  width: 6*$container-padding + $left-container-width + $center-container-width + $right-container-width;
+  .container {
+    float: left;
+    padding: $container-padding;
+  }
+  .bio-information {
+    background-color: #f6f6f6;
+    width: $left-container-width;
+  }
+  .center-container {
+    background-color: #efefef;
+    width: $center-container-width;
+  }
+  .right-container {
+    background-color: #e6e6e6;
+    width: $right-container-width;
+  }
+}
+
+.social {
+  a:visited, a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+  }
+  a:hover {
+    color: blue;
+  }
 }

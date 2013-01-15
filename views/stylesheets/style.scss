@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+//  background-image: url('/grey.png');
 //  line-height: 25px;
 }
 
@@ -58,13 +59,8 @@ h1 {
 }
 
 .social {
-  a:visited, a {
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-  }
-  a:hover {
-    color: blue;
+  i {
+    padding: 5px;
   }
 }
 
@@ -75,3 +71,18 @@ a:visited, a {
 a:hover {
   color: red;
 }
+
+.language {
+  .flag {
+    width: 28px;
+    padding-top: 2px;
+    float: left;
+  }
+  .name {
+    font-weight: bold;
+    width: 70px;
+    float: left;
+  }
+}
+
+.clear { clear: both; }

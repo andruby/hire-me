@@ -1,29 +1,55 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+//  line-height: 25px;
 }
 
-$left-container-width: 160px;
-$center-container-width: 340px;
-$right-container-width: 450px;
-$container-padding: 10px;
+//p, h1, h2, h3, h4, h5 {
+//  margin: 25px 0px 25px 0px;
+//}
 
+$left-container-width: 150px;
+$center-container-width: 360px;
+$right-container-width: 500px;
+$container-padding: 15px;
+
+.red {
+  color: red;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+//  line-height: 50px;
+}
+
+.photo img {
+  border: 1px solid black;
+}
 
 .wrapper {
+  margin-left: $container-padding;
   width: 6*$container-padding + $left-container-width + $center-container-width + $right-container-width;
   .container {
     float: left;
     padding: $container-padding;
   }
   .bio-information {
-    background-color: #f6f6f6;
+    padding-top: 38px;
     width: $left-container-width;
   }
   .center-container {
-    background-color: #efefef;
+//    background-color: #efefef;
     width: $center-container-width;
   }
   .right-container {
-    background-color: #e6e6e6;
+//    background-color: #e6e6e6;
     width: $right-container-width;
   }
 }
@@ -37,4 +63,12 @@ $container-padding: 10px;
   a:hover {
     color: blue;
   }
+}
+
+a:visited, a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
 }

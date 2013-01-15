@@ -37,19 +37,22 @@ h1 {
   margin-left: $container-padding;
   width: 6*$container-padding + $left-container-width + $center-container-width + $right-container-width;
   .container {
-    float: left;
     padding: $container-padding;
   }
   .bio-information {
+    position: fixed;
     padding-top: 38px;
     width: $left-container-width;
   }
   .center-container {
-//    background-color: #efefef;
+    margin-left: $left-container-width + 2 * $container-padding;
     width: $center-container-width;
+    margin-bottom: 30px;
   }
   .right-container {
-//    background-color: #e6e6e6;
+    position: fixed;
+    top: 0;
+    left: $left-container-width + $center-container-width + (5 * $container-padding);
     width: $right-container-width;
   }
 }
